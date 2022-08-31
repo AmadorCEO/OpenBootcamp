@@ -1,15 +1,23 @@
 package com.albertoamador;
 
+import java.util.Scanner;
+
 public class PrecioConIva {
 
     public static void main(String[] args) {
 
-        double precio = getPrecio(199.99,1.07);
-        System.out.format("El precio con IVA es: $%.2f ", precio);
+        Scanner scanner = new Scanner(System.in);
+        System.out.printf("Cuál es el precio: ");
+        double precio = scanner.nextDouble();
+        double iva = 1.07;
+        precioFinal(precio, iva);
+        System.out.printf("El precio final con IVA: $" + precioFinal(precio, iva));
 
     }
 
-    static double getPrecio(double precio, double iva){
+    static double precioFinal(double precio, double iva) {
         return precio * iva;
+
     }
+
 }
