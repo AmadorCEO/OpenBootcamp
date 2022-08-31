@@ -1,0 +1,15 @@
+package com.albertoamador;
+
+public class PrecioConIva {
+
+    public static void main(String[] args) {
+
+        double precio = getPrecio(199.99,1.07);
+        System.out.format("El precio con IVA es: $%.2f ", precio);
+
+    }
+
+    static double getPrecio(double precio, double iva){
+        return precio * iva;
+    }
+}
