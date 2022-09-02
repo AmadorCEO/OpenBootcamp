@@ -1,0 +1,14 @@
+package com.albertoamador.estructuradecontrol.condicionales;
+
+public class ConcatenarNombres {
+
+    public static void main(String[] args) {
+
+        String[] nombres = {"Alberto", "Virginia", "Alexander", "Ivan"};
+
+        for (String nombre : nombres) {
+            String concatenar = nombres[0] + " " + nombres[1] + " " + nombres[2] + " " + nombres[3];
+            System.out.println(concatenar);
+            break;
+        }
+    }
